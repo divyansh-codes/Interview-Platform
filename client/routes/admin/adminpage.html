@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator</title>
+</head>
+
+<body>
+    <h1>Welcome to Administrator panel</h1>
+    <p>Please fill the details to add user:</p>
+    <!-- AddUserForm -->
+    <form id="addUserForm" enctype="application/x-www-form-urlencoded">
+        <lable for="username">Username:</lable>
+        <input id="username" name="username" placeholder="Enter a unique Username" required>
+        <lable for="name">Name:</lable>
+        <input id="name" name="name" placeholder="Please enter user's name" required>
+        <lable for="role">Role:</lable>
+        <select id="role" name="role" required>
+            <option value="" disabled selected>Please select user's role</option>
+            <option value=Candidate>Candidate</option>
+            <option value=Interviewer>Interviewer</option>
+            <option value=Moderator>Moderator</option>
+            <option value=Admin>Administrator</option>
+        </select>
+        <button type="submit">Make user</button>
+    </form><br><br>
+    <!-- Form for Creating New Room -->
+    <form id="createRoomForm" enctype="application/x-www-form-urlencoded">
+        <label for="roomName">Room Name:</label>
+        <input if="roomName" name="roomName" placeholder="Phase 1 interview..." required>
+        <label for="roomDisc">Discription:</label>
+        <input id="roomDesc" name="roomDisc" placeholder="Final Interview for Editor...">
+        <button type="submit">Create Room</button>
+    </form><br><br>
+    <!-- Form to add User to Room -->
+    <form id="addMemberRoomForm" enctype="application/x-www-form-urlencoded">
+        <lable for="selectRoom">Select Room:</lable>
+        <select id="selectRoom" name="selectRoom" required>
+            <!-- Rooms are added dynamically -->
+        </select>
+
+        <lable for="selectUser">Select User:</lable>
+        <select id="selectUser" name="selectUser" required>
+            <!-- Users are added dynamically -->
+        </select>
+        <button type="submit">Add User to Room</button>
+    </form><br><br>
+    <div id="userListContainer">
+        <table id="userListTable">
+            <tr>
+                <th><b>Username</b></th>
+                <th><b>Name</b></th>
+                <th><b>role</b></th>
+            </tr>
+        </table>
+    </div><br><br>
+    <div id="roomListContainer">
+        <table id="roomListTable">
+        </table>
+    </div>
+    <script src="/routes/admin/script.js"></script>
+</body>
+
+</html>

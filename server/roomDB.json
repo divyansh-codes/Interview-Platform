@@ -1,0 +1,64 @@
+[
+  {
+    "id": "f5c4d8b2-3968-4012-bcf3-7d973f084f29",
+    "roomName": "test room 1",
+    "description": "Room for testing",
+    "members": [
+      {
+        "username": "test@candidate",
+        "name": "Candidate name ",
+        "role": "Candidate",
+        "inRooms": [
+          "f5c4d8b2-3968-4012-bcf3-7d973f084f29"
+        ]
+      },
+      {
+        "username": "test@admin",
+        "name": "admin name",
+        "role": "Admin",
+        "inRooms": [
+          "f5c4d8b2-3968-4012-bcf3-7d973f084f29"
+        ]
+      },
+      {
+        "username": "test@Candidate2",
+        "name": "candidate 2 name",
+        "role": "Candidate",
+        "inRooms": [
+          "f5c4d8b2-3968-4012-bcf3-7d973f084f29"
+        ]
+      },
+      {
+        "username": "test@Candidate3",
+        "name": "Candidate 3 name",
+        "role": "Candidate",
+        "inRooms": [
+          "f5c4d8b2-3968-4012-bcf3-7d973f084f29"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4bc9baad-31ea-4e8e-8e18-ae4c021e0a3e",
+    "roomName": "test room 2",
+    "description": "",
+    "members": [
+      {
+        "username": "test@moderator",
+        "name": "Moderator name",
+        "role": "Moderator",
+        "inRooms": [
+          "4bc9baad-31ea-4e8e-8e18-ae4c021e0a3e"
+        ]
+      },
+      {
+        "username": "test@interviewer",
+        "name": "interviewer name",
+        "role": "Interviewer",
+        "inRooms": [
+          "4bc9baad-31ea-4e8e-8e18-ae4c021e0a3e"
+        ]
+      }
+    ]
+  }
+]

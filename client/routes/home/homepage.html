@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - InterView Platform</title>
+</head>
+
+<body>
+    <h1>Welcome to Interview Platform</h1>
+    <form id="joinIntForm" enctype="application/x-www-form-urlencoded">
+        <select name="selectRoom" id="selectRoom" required>
+            <!-- rooms are added dynamically -->
+        </select>
+        <button id="join" type="submit">Join InterView</button>
+    </form>
+    <div id="EndbtnContainer"></div>
+    <video id="localVideo" autoplay muted></video>
+    <div id="remoteVideoContainer"></div>
+
+    <p id="interViewAlert"></p>
+    <div id="chatBox"></div>
+    <form id="sendForm">
+        <input name="sendBox" id="sendBox" type="text" required>
+        <button type="submit">Send!</button>
+    </form>
+    <br><br>
+    <div>
+        <div id="editor" style="height:500px;width:100%;"></div>
+        <button id="copyBtn">Copy Code!</button>
+        <p id="copyAlert"></p>
+    </div>
+    <div>
+        <Button id="pastRecordsBtn">Display Past Records</Button>
+        <div id="pastRecordsContainer"></div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
+    <script src="/routes/home/script.js"></script>
+</body>
+
+</html>
