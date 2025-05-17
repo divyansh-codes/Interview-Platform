@@ -14,3 +14,4 @@ build/
 *.swo
 .vscode/
 .idea/
+client/routes/home/OLD SCRIPT.js
